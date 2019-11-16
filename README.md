@@ -42,4 +42,11 @@ For more physics background see https://en.wikipedia.org/wiki/Maxwell_constructi
     allocate(srk_t::eos)
   ```
   
+  Then, make and run again to get new results in a CSV file format
+  
+  ```bash
+  make
+ ./MaxwellConstruction
+ ```
+  
 East peasy :)
