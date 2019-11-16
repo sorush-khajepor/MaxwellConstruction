@@ -2,13 +2,15 @@
 
 This solver finds the saturation pressure, vapor and liquid density at a specific temperature for Van der Waals (VW), Peng-Robinson (PR), Redlich-Kwong (RK), Soave-Redlich-Kwong (SRK), Carnahan-Starling (CS). It can also produce results for a range of temperature with double precision accuracy.
 
+For more physics background see https://en.wikipedia.org/wiki/Maxwell_construction
+
 ## Prerequisites
 * CMake
 * Gfortran >= 5.0
 * gnuplot (optional)
 
  ## Build on windows
- ```
+ ```bash
  mkdir build
  cd build
  cmake -G "MinGW Makefiles" ..
@@ -17,7 +19,7 @@ This solver finds the saturation pressure, vapor and liquid density at a specifi
 ```
 
  ## Build on linux
- ```
+ ```bash
  mkdir build
  cd build
  cmake ..
@@ -26,7 +28,7 @@ This solver finds the saturation pressure, vapor and liquid density at a specifi
  ```
  Once successfully compiled, and run, you can change settings in file ./examples/main.f90
  
- ```
+ ```fortran
 !   Start reduced temperature
     Tr_st = 0.3_wp
 !   Reduced temperature step size    
