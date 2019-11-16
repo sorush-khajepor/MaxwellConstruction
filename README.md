@@ -2,6 +2,7 @@
 
 This solver finds the saturation pressure, vapor and liquid density at a specific temperature for Van der Waals (VW), Peng-Robinson (PR), Redlich-Kwong (RK), Soave-Redlich-Kwong (SRK), Carnahan-Starling (CS). It can also produce results for a range of temperature with double precision accuracy.
 
+I created and used this library during my PhD on lattice Boltzmann method. I hope it helps others.
 For more physics background see https://en.wikipedia.org/wiki/Maxwell_construction
 
 ## Prerequisites
