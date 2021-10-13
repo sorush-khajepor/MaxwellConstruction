@@ -50,3 +50,20 @@ For more physics background see https://en.wikipedia.org/wiki/Maxwell_constructi
  ```
   
 East peasy :)
+
+## Cite this
+
+If this code is useful to your research, please cite and read papers which I developed this code for:
+
+```
+Multipseudopotential interaction: A solution for thermodynamic inconsistency in pseudopotential lattice Boltzmann models
+S Khajepor, J Wen, B Chen
+Physical Review E 91 (2), 023301, year 2015
+
+Multipseudopotential interaction: A consistent study of cubic equations of state in lattice Boltzmann models
+S Khajepor, B Chen
+Physical Review E 93 (1), 013303, year 2016
+```
+
+
+
