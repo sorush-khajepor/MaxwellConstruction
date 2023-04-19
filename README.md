@@ -1,9 +1,22 @@
 #  Maxwell Construction Solver
 
-This solver finds the saturation pressure, vapor and liquid density at a specific temperature for Van der Waals (VW), Peng-Robinson (PR), Redlich-Kwong (RK), Soave-Redlich-Kwong (SRK), Carnahan-Starling (CS). It can also produce results for a range of temperature with double precision accuracy.
+This solver finds the saturation pressure, vapor and liquid density at a saturation temperature (Tsat) for Van der Waals (VW), Peng-Robinson (PR), Redlich-Kwong (RK), Soave-Redlich-Kwong (SRK), Carnahan-Starling (CS). It can also produce results for a range of temperature with double precision accuracy.
+
+The code finds saturation pressure (Psat), corresponding to Tsat,  that satisfies Maxwell's construction. The algorithm in the nutshell is:
+1) Assume a good Psat.
+2) Solve P-Psat=0 to find vapor and liquid densities. For a saturation state, we should get three densities. The middle one is not real. 
+3) Calculate Maxwell integration over the interval  [vapor density, liquid density]. This must be zero.
+4) Go to one.
 
 I created and used this library during my PhD on lattice Boltzmann method. I hope it helps others.
 For more physics background see https://en.wikipedia.org/wiki/Maxwell_construction
+
+## Is there a faster way to Find saturation state of a fluid?
+Yes, instead of Maxwell construction condition, we could use the condition that the chemical potential of the liquid phase and the vapor phase should be equal. For simplicity, we can use the equality of fugacity coefficients for both phases:
+
+φ_Liquid = φ_Vapor
+
+This is not implemented in this code.
 
 ## Prerequisites
 * CMake
