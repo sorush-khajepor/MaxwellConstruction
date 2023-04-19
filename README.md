@@ -16,7 +16,7 @@ Yes, instead of Maxwell construction condition, we could use the condition that 
 
 φ_Liquid = φ_Vapor
 
-This is not implemented in this code.
+This condition has the same basis as Maxwell construction where chemical potential or Gibbs free energy of liquid and vapor are the same at equilibrium. Note that the condition of equality of fugacities are not implemented in this code.
 
 ## Prerequisites
 * CMake
